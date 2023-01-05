@@ -87,7 +87,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
 
-    <Preference
+    <com.xd.mnmlist.preferences.SecureSettingSwitchPreference
         android:key="gesture_screen_off_udfps_input_summary"
         android:title="@string/ambient_display_screen_off_udfps_title"
         android:fragment="com.android.settings.gestures.ScreenOffUdfpsSettings"
