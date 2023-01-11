@@ -62,6 +62,39 @@
         android:summary="@string/battery_percentage_description"
         android:title="@string/battery_percentage"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
+    
+    <SwitchPreference
+        android:key="fast_charging"
+        android:title="@string/fast_charging_title"
+        android:summary="@string/fast_charging_summary"
+        settings:controller="com.android.settings.fuelgauge.FastChargingPreferenceController"/>
+    
+    <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps"
+        android:summary="@string/high_power_apps_summary">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
+    
+    <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
+        android:key="designed_battery_capacity"
+        android:title="@string/designed_battery_capacity"
+        android:selectable="false" />
+
+    <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
+        android:key="current_battery_capacity"
+        android:title="@string/current_battery_capacity"
+        android:selectable="false" />
+    
+    <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
+        android:key="battery_charge_cycles"
+        android:title="@string/battery_charge_cycles"
+        android:selectable="false" />
+
+    <com.android.settings.fuelgauge.batteryusage.PowerGaugePreference
+        android:key="battery_temp"
+        android:title="@string/battery_temp"
+        android:selectable="false" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
